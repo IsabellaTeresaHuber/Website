@@ -18,12 +18,13 @@ jobs:
       
       - run: npm run build
       
-      - run: cp public/* dist/ 2>/dev/null || true
+      - run: cp public/* dist/ || true
       
-      - name: Deploy
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: isabella-website
-          directory: dist
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          wrangler pages project create isabella-website --production-branch=main || true
+          wrangler pages deploy dist --project-name=isabella-website --branch=main
