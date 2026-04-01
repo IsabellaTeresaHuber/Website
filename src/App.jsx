@@ -85,10 +85,10 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="font-semibold text-lg">IH</div>
           <div className="flex gap-6 text-sm">
-            <a href="#about" className="hover:text-purple-600 transition-colors">About</a>
-            <a href="#experience" className="hover:text-purple-600 transition-colors">Experience</a>
-            <a href="#education" className="hover:text-purple-600 transition-colors">Education</a>
-            <a href="#contact" className="hover:text-purple-600 transition-colors">Contact</a>
+            <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
+            <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
+            <a href="#education" className="hover:text-blue-600 transition-colors">Education</a>
+            <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
         </div>
       </nav>
@@ -103,8 +103,8 @@ function App() {
               className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-white dark:border-gray-800"
             />
           </div>
-          <p className="text-purple-600 font-medium mb-4">Senior Channel Account Manager</p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <p className="text-blue-600 font-medium mb-4">Senior Channel Account Manager</p>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 bg-clip-text text-transparent">
             Isabella Huber
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -112,10 +112,10 @@ function App() {
             ICF-Certified Executive Coach with expertise in partner ecosystems and business development.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="#contact" className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+            <a href="#contact" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
               Get in Touch
             </a>
-            <a href="#experience" className="px-6 py-3 border border-gray-300 rounded-lg hover:border-purple-600 transition-colors">
+            <a href="#experience" className="px-6 py-3 border border-gray-300 rounded-lg hover:border-blue-600 transition-colors">
               View Experience
             </a>
           </div>
@@ -132,14 +132,14 @@ function App() {
               <div className="flex flex-wrap justify-between items-start mb-4">
                 <div>
                   <h3 className="text-xl font-semibold">{exp.title}</h3>
-                  <p className="text-purple-600">{exp.company}</p>
+                  <p className="text-blue-600">{exp.company}</p>
                 </div>
                 <span className="text-gray-500 text-sm">{exp.period}</span>
               </div>
               <ul className="space-y-3">
                 {exp.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex gap-3">
-                    <span className="text-purple-600 mt-1">•</span>
+                    <span className="text-blue-600 mt-1">•</span>
                     <span className="text-gray-700 dark:text-gray-300">{highlight}</span>
                   </li>
                 ))}
@@ -154,7 +154,7 @@ function App() {
             <ul className="space-y-3">
               {earlyCareer.map((item, idx) => (
                 <li key={idx} className="flex gap-3">
-                  <span className="text-purple-600 mt-1">•</span>
+                  <span className="text-blue-600 mt-1">•</span>
                   <span className="text-gray-700 dark:text-gray-300">{item}</span>
                 </li>
               ))}
@@ -172,7 +172,7 @@ function App() {
             {education.map((edu) => (
               <div key={edu.id} className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-6">
                 <h3 className="font-semibold mb-2">{edu.degree}</h3>
-                <p className="text-purple-600 mb-1">{edu.school}</p>
+                <p className="text-blue-600 mb-1">{edu.school}</p>
                 <p className="text-gray-500 text-sm mb-2">{edu.period}</p>
                 <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{edu.details}</p>
                 <p className="text-xs text-gray-500">{edu.extra}</p>
@@ -190,7 +190,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skill, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
-                <h3 className="font-semibold text-purple-600 mb-3">{skill.category}</h3>
+                <h3 className="font-semibold text-blue-600 mb-3">{skill.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item, i) => (
                     <span key={i} className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
@@ -204,12 +204,12 @@ function App() {
 
           {/* Languages */}
           <div className="mt-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
-            <h3 className="font-semibold text-purple-600 mb-4">Languages</h3>
+            <h3 className="font-semibold text-blue-600 mb-4">Languages</h3>
             <div className="flex flex-wrap gap-6">
               {languages.map((lang) => (
                 <div key={lang.name} className="flex items-center gap-2">
                   <span className="font-medium">{lang.name}</span>
-                  <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs font-medium">
+                  <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs font-medium">
                     {lang.level}
                   </span>
                 </div>
@@ -258,12 +258,12 @@ function App() {
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            <a href="tel:+491749315203" className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">
+            <a href="tel:+491749315203" className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
               <div className="text-2xl mb-2">📞</div>
               <p className="font-medium">Phone</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">+49 174 931 5203</p>
             </a>
-            <a href="mailto:isabellahuber@web.de" className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors">
+            <a href="mailto:isabellahuber@web.de" className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
               <div className="text-2xl mb-2">✉️</div>
               <p className="font-medium">Email</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">isabellahuber@web.de</p>
