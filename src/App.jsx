@@ -250,73 +250,93 @@ function App() {
         </div>
       </section>
 
-      {/* Who Am I Section */}
-      <section id="who-am-i" className="py-20 px-6 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent">
-            Who Am I?
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                <span className="text-2xl font-semibold text-blue-600 dark:text-blue-400">Born in Eggenfelden</span>, 
-                a small Bavarian town where family values run deep. I grew up surrounded by my six siblings—each one 
-                brilliantly different, yet we're all connected by heart. 💙
-              </p>
-              
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                This foundation taught me something invaluable: <span className="font-semibold text-cyan-600 dark:text-cyan-400">diversity 
-                is strength</span>. Growing up in a big family means learning to navigate different personalities, perspectives, 
-                and dreams—all while staying rooted in love and mutual respect.
-              </p>
-              
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                Today, I carry these roots with pride. They've shaped me into someone who's <span className="font-semibold text-teal-600 dark:text-teal-400">open-minded, 
-                empathetic, and genuinely curious</span> about people from all walks of life. Whether you're an introvert or extrovert, 
-                analytical or creative, traditional or unconventional—I see the value in every character and perspective.
-              </p>
-              
-              <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 border-l-4 border-blue-500">
-                <p className="text-lg italic text-gray-800 dark:text-gray-200">
-                  "Understanding where I come from helps me appreciate where others are going. My family taught me that 
-                  connection transcends differences—and that's the lens I bring to every relationship, both personal and professional."
-                </p>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <img src="/Family/Family1.jpg" alt="Family memories" className="w-full h-64 object-cover" />
-              </div>
-              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300 mt-8">
-                <img src="/Family/Family2.jpg" alt="Family moments" className="w-full h-64 object-cover" />
-              </div>
-              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300 -mt-8">
-                <img src="/Family/Family3.jpg" alt="Growing up together" className="w-full h-64 object-cover" />
-              </div>
-              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <img src="/Family/Family4.jpg" alt="Family bonds" className="w-full h-64 object-cover" />
-              </div>
-            </div>
+    {/* Who Am I Section */}
+<section id="who-am-i" className="py-24 px-6 bg-slate-50 dark:bg-gray-950 overflow-hidden">
+  <div className="max-w-6xl mx-auto">
+    
+    {/* Section Header */}
+    <div className="text-center mb-20">
+      <h2 className="text-sm font-bold tracking-widest uppercase text-blue-600 mb-3">My Story</h2>
+      <h3 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white">
+        Rooted in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">Family</span>, 
+        Driven by Connection.
+      </h3>
+    </div>
+
+    <div className="grid lg:grid-cols-12 gap-16 items-start">
+      
+      {/* Visual Storytelling Side (The Images) */}
+      <div className="lg:col-span-5 relative">
+        <div className="relative z-10 grid grid-cols-2 gap-4">
+          <div className="space-y-4">
+            <img src="/Family1.jpeg" alt="Eggenfelden roots" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
+            <img src="/Family3.jpg" alt="Siblings" className="rounded-2xl shadow-2xl w-full h-40 object-cover" />
           </div>
-          
-          <div className="text-center">
-            <div className="inline-block bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">What This Means for You</h3>
-              <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
-                When we work together, you're not just getting a Channel Account Manager or Executive Coach. 
-                You're partnering with someone who genuinely values <span className="font-semibold text-blue-600 dark:text-blue-400">authenticity, 
-                diversity of thought, and human connection</span>. I bring my whole self to the table—and I invite you to do the same.
-              </p>
-            </div>
-          </div>
-          
-          <div className="mt-12 overflow-hidden rounded-2xl shadow-2xl">
-            <img src="/Family/Family5.jpg" alt="Family together" className="w-full h-96 object-cover" />
+          <div className="space-y-4 pt-8">
+            <img src="/Family2.jpg" alt="Values" className="rounded-2xl shadow-2xl w-full h-40 object-cover" />
+            <img src="/Family4.jpg" alt="Growth" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
           </div>
         </div>
-      </section>
+        {/* Decorative Element */}
+        <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-200/50 dark:bg-blue-900/20 rounded-full blur-3xl -z-10"></div>
+      </div>
+
+      {/* Content Side */}
+      <div className="lg:col-span-7 space-y-12">
+        
+        {/* Chapter 1: The Origin */}
+        <div className="flex gap-6">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-200">1</div>
+          <div>
+            <h4 className="text-2xl font-bold mb-3 dark:text-white">The Eggenfelden Blueprint</h4>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              In a small Bavarian town, I was 1 of 7. Growing up with six siblings wasn't just about a busy household—it was a masterclass in 
+              <span className="text-gray-900 dark:text-white font-medium"> interpersonal dynamics</span>. My family taught me that 
+              different perspectives aren't obstacles; they are the ingredients of a stronger whole.
+            </p>
+          </div>
+        </div>
+
+        {/* Chapter 2: The Philosophy */}
+        <div className="flex gap-6">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-cyan-500 text-white font-bold shadow-lg shadow-cyan-200">2</div>
+          <div>
+            <h4 className="text-2xl font-bold mb-3 dark:text-white">Empathy as a Strategy</h4>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              Today, I carry those roots into every boardroom and coaching session. Whether you’re an analytical mind or a creative firebrand, 
+              I see the value in your unique character. My "big family" upbringing turned 
+              <span className="text-cyan-600 font-medium"> empathy into a professional edge</span>.
+            </p>
+          </div>
+        </div>
+
+        {/* Chapter 3: The Result (What this means for the user) */}
+        <div className="p-8 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm relative overflow-hidden">
+          <div className="relative z-10">
+            <h4 className="text-xl font-bold mb-4 text-blue-600">Why Work With Me?</h4>
+            <p className="text-gray-700 dark:text-gray-300 text-lg">
+              You’re not just hiring a Channel Manager or Executive Coach; you're partnering with a human-centric strategist. 
+              I bring **authenticity**, **diversity of thought**, and a genuine knack for building bridges where others see walls.
+            </p>
+          </div>
+          <div className="absolute top-0 right-0 p-4 opacity-10">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14.725q-.35 0-.6-.238t-.25-.587q0-.35.25-.6t.6-.25h2q.575 0 1-.425t.425-1v-2q0-.575-.425-1t-1-.425h-2q-.35 0-.6-.25t-.25-.6v-2q0-.35.25-.6t.6-.25h2q1.425 0 2.413.988T19 6.875v2q0 1.425-.988 2.413T15.6 12.275h-2.6zm-8 0q-.35 0-.6-.238t-.25-.587q0-.35.25-.6t.6-.25h2q.575 0 1-.425t.425-1v-2q0-.575-.425-1t-1-.425h-2q-.35 0-.6-.25t-.25-.6v-2q0-.35.25-.6t.6-.25h2q1.425 0 2.413.988T11 6.875v2q0 1.425-.988 2.413T7.6 12.275H5z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Impactful Footer Image */}
+    <div className="mt-20 group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl flex items-end p-8">
+        <p className="text-white text-xl font-medium italic">"Understanding where I come from helps me appreciate where you're going."</p>
+      </div>
+      <img src="/Family/Family5.jpg" alt="The Whole Family" className="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+    </div>
+
+  </div>
+</section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
