@@ -88,6 +88,7 @@ function App() {
             <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
             <a href="#education" className="hover:text-blue-600 transition-colors">Education</a>
+            <a href="#who-am-i" className="hover:text-blue-600 transition-colors">Who Am I</a>
             <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
         </div>
@@ -245,6 +246,74 @@ function App() {
             <div className="overflow-hidden rounded-xl shadow-md">
               <img src="/unnamed (31).jpg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Am I Section */}
+      <section id="who-am-i" className="py-20 px-6 bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent">
+            Who Am I?
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                <span className="text-2xl font-semibold text-blue-600 dark:text-blue-400">Born in Eggenfelden</span>, 
+                a small Bavarian town where family values run deep. I grew up surrounded by my six siblings—each one 
+                brilliantly different, yet we're all connected by heart. 💙
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                This foundation taught me something invaluable: <span className="font-semibold text-cyan-600 dark:text-cyan-400">diversity 
+                is strength</span>. Growing up in a big family means learning to navigate different personalities, perspectives, 
+                and dreams—all while staying rooted in love and mutual respect.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                Today, I carry these roots with pride. They've shaped me into someone who's <span className="font-semibold text-teal-600 dark:text-teal-400">open-minded, 
+                empathetic, and genuinely curious</span> about people from all walks of life. Whether you're an introvert or extrovert, 
+                analytical or creative, traditional or unconventional—I see the value in every character and perspective.
+              </p>
+              
+              <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 border-l-4 border-blue-500">
+                <p className="text-lg italic text-gray-800 dark:text-gray-200">
+                  "Understanding where I come from helps me appreciate where others are going. My family taught me that 
+                  connection transcends differences—and that's the lens I bring to every relationship, both personal and professional."
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+                <img src="/Family/Family1.jpg" alt="Family memories" className="w-full h-64 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300 mt-8">
+                <img src="/Family/Family2.jpg" alt="Family moments" className="w-full h-64 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300 -mt-8">
+                <img src="/Family/Family3.jpg" alt="Growing up together" className="w-full h-64 object-cover" />
+              </div>
+              <div className="overflow-hidden rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+                <img src="/Family/Family4.jpg" alt="Family bonds" className="w-full h-64 object-cover" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <div className="inline-block bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">What This Means for You</h3>
+              <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl">
+                When we work together, you're not just getting a Channel Account Manager or Executive Coach. 
+                You're partnering with someone who genuinely values <span className="font-semibold text-blue-600 dark:text-blue-400">authenticity, 
+                diversity of thought, and human connection</span>. I bring my whole self to the table—and I invite you to do the same.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 overflow-hidden rounded-2xl shadow-2xl">
+            <img src="/Family/Family5.jpg" alt="Family together" className="w-full h-96 object-cover" />
           </div>
         </div>
       </section>
