@@ -220,36 +220,6 @@ function App() {
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Gallery</h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/Isa3.jpeg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/1536e267-c00a-4b63-a69c-5087e1c3a737.jpeg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/Image_20250402_222942_937.jpeg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/Image_20250918_152319_215.jpeg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/Bildschirmfoto 2026-03-30 um 21.17.08.png" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/Bildschirmfoto 2026-03-30 um 21.22.36.png" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <img src="/unnamed (31).jpg" alt="Isabella Huber" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-            </div>
-          </div>
-        </div>
-      </section>
-
     {/* Who Am I Section */}
 <section id="who-am-i" className="py-24 px-6 bg-slate-50 dark:bg-gray-950 overflow-hidden">
   <div className="max-w-6xl mx-auto">
@@ -263,76 +233,127 @@ function App() {
       </h3>
     </div>
 
-    <div className="grid lg:grid-cols-12 gap-16 items-start">
-      
-      {/* Visual Storytelling Side (The Images) */}
-      <div className="lg:col-span-5 relative">
-        <div className="relative z-10 grid grid-cols-2 gap-4">
-          <div className="space-y-4">
-            <img src="/Family1.jpg" alt="Eggenfelden roots" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
-            <img src="/Family3.jpg" alt="Siblings" className="rounded-2xl shadow-2xl w-full h-40 object-cover" />
-          </div>
-          <div className="space-y-4 pt-8">
-            <img src="/Family2.jpg" alt="Values" className="rounded-2xl shadow-2xl w-full h-40 object-cover" />
-            <img src="/Family4.jpg" alt="Growth" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
-          </div>
-        </div>
-        {/* Decorative Element */}
-        <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-200/50 dark:bg-blue-900/20 rounded-full blur-3xl -z-10"></div>
-      </div>
-
-      {/* Content Side */}
-      <div className="lg:col-span-7 space-y-12">
-        
-        {/* Chapter 1: The Origin */}
-        <div className="flex gap-6">
-          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-200">1</div>
+    {/* Chapter 1: The Origin */}
+    <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div className="space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold shadow-lg">1</div>
           <div>
             <h4 className="text-2xl font-bold mb-3 dark:text-white">The Eggenfelden Blueprint</h4>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              In a small Bavarian town, I was 1 of 7. Growing up with six siblings wasn't just about a busy household - it was a masterclass in 
-              <span className="text-gray-900 dark:text-white font-medium"> interpersonal dynamics</span>. My family taught me that 
-              different perspectives aren't obstacles; they are the ingredients of a stronger whole.
+              Born in <span className="font-semibold text-blue-600">Eggenfelden, Bavaria</span>, I was 1 of 7 siblings. Growing up in a large family wasn't just about a busy household—it was a masterclass in <span className="text-gray-900 dark:text-white font-medium">interpersonal dynamics, negotiation, and empathy</span>.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+              My family taught me that different perspectives aren't obstacles; they're the ingredients of a stronger whole. This foundation shaped my approach to leadership, coaching, and partnership development.
             </p>
           </div>
         </div>
-
-        {/* Chapter 2: The Philosophy */}
-        <div className="flex gap-6">
-          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-cyan-500 text-white font-bold shadow-lg shadow-cyan-200">2</div>
-          <div>
-            <h4 className="text-2xl font-bold mb-3 dark:text-white">Empathy as a Strategy</h4>
-            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              Today, I carry those roots into every boardroom and coaching session. Whether you’re an analytical mind or a creative firebrand, 
-              I see the value in your unique character. My "big family" upbringing turned 
-              <span className="text-cyan-600 font-medium"> empathy into a professional edge</span>.
-            </p>
-          </div>
-        </div>
-
-        {/* Chapter 3: The Result (What this means for the user) */}
-        <div className="p-8 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm relative overflow-hidden">
-          <div className="relative z-10">
-            <h4 className="text-xl font-bold mb-4 text-blue-600">Why Work With Me?</h4>
-            <p className="text-gray-700 dark:text-gray-300 text-lg">
-              You’re not just working with a Channel Manager or Executive Coach; you're partnering with a human-centric strategist. 
-              I bring authenticity, diversity of thought, and a genuine knack for building bridges where others see walls.
-            </p>
-          </div>
-          <div className="absolute top-0 right-0 p-4 opacity-10">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14.725q-.35 0-.6-.238t-.25-.587q0-.35.25-.6t.6-.25h2q.575 0 1-.425t.425-1v-2q0-.575-.425-1t-1-.425h-2q-.35 0-.6-.25t-.25-.6v-2q0-.35.25-.6t.6-.25h2q1.425 0 2.413.988T19 6.875v2q0 1.425-.988 2.413T15.6 12.275h-2.6zm-8 0q-.35 0-.6-.238t-.25-.587q0-.35.25-.6t.6-.25h2q.575 0 1-.425t.425-1v-2q0-.575-.425-1t-1-.425h-2q-.35 0-.6-.25t-.25-.6v-2q0-.35.25-.6t.6-.25h2q1.425 0 2.413.988T11 6.875v2q0 1.425-.988 2.413T7.6 12.275H5z"/></svg>
-          </div>
-        </div>
-
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        <img src="/Family1.jpg" alt="Family roots" className="rounded-2xl shadow-xl w-full h-64 object-cover grayscale hover:grayscale-0 transition duration-500" />
+        <img src="/Isa3.jpeg" alt="Professional" className="rounded-2xl shadow-xl w-full h-64 object-cover mt-8" />
       </div>
     </div>
 
-    {/* Impactful Footer Image */}
-    <div className="mt-20 group relative">
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl flex items-end p-8">
-        <p className="text-white text-xl font-medium italic">"Understanding where I come from helps me appreciate where you're going."</p>
+    {/* Chapter 2: Professional Journey */}
+    <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
+        <img src="/1536e267-c00a-4b63-a69c-5087e1c3a737.jpeg" alt="Speaking engagement" className="rounded-2xl shadow-xl w-full h-64 object-cover" />
+        <img src="/Family2.jpg" alt="Team collaboration" className="rounded-2xl shadow-xl w-full h-64 object-cover mt-8" />
       </div>
-      <img src="/Family5.jpg" alt="The Whole Family" className="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+      <div className="order-1 md:order-2 space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-cyan-500 text-white font-bold shadow-lg">2</div>
+          <div>
+            <h4 className="text-2xl font-bold mb-3 dark:text-white">From Munich to Global Impact</h4>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              My journey took me from <span className="font-semibold text-cyan-600">TU Munich</span> (Master in Management & Technology) to <span className="font-semibold">Shanghai Jiao Tong University</span> for my MBA, and across Europe leading multinational teams.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+              I've built my career at the intersection of <span className="text-gray-900 dark:text-white font-medium">technology, strategy, and human connection</span>—from BMW Group and IAV GmbH to leading 15 BDRs across CEE, Israel, and DACH regions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Chapter 3: Coaching & Leadership */}
+    <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div className="space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-teal-500 text-white font-bold shadow-lg">3</div>
+          <div>
+            <h4 className="text-2xl font-bold mb-3 dark:text-white">ICF-Certified Executive Coach</h4>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              As an <span className="font-semibold text-teal-600">ICF-Certified Executive Coach</span>, I combine strategic business acumen with deep empathy. My coaching philosophy is simple: <span className="text-gray-900 dark:text-white font-medium">authentic leadership starts with understanding yourself and valuing others</span>.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+              I've mentored teams at UnternehmerTUM, conducted UX research at TUM School of Management, and consistently exceeded pipeline targets (100%+) through human-centric approaches to business development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        <img src="/Image_20250402_222942_937.jpeg" alt="Coaching session" className="rounded-2xl shadow-xl w-full h-64 object-cover" />
+        <img src="/Family4.jpg" alt="Leadership" className="rounded-2xl shadow-xl w-full h-64 object-cover mt-8 grayscale hover:grayscale-0 transition duration-500" />
+      </div>
+    </div>
+
+    {/* Chapter 4: Current Impact */}
+    <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
+        <img src="/Image_20250918_152319_215.jpeg" alt="Partnership success" className="rounded-2xl shadow-xl w-full h-64 object-cover" />
+        <img src="/Bildschirmfoto 2026-03-30 um 21.17.08.png" alt="Revenue excellence" className="rounded-2xl shadow-xl w-full h-64 object-cover mt-8" />
+      </div>
+      <div className="order-1 md:order-2 space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-purple-500 text-white font-bold shadow-lg">4</div>
+          <div>
+            <h4 className="text-2xl font-bold mb-3 dark:text-white">Driving Revenue Excellence</h4>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+              Currently performing at <span className="font-semibold text-purple-600">240% YTD quota</span> as Senior Channel Account Manager for the DACH region. I manage the end-to-end partner lifecycle—from contract negotiation to strategic alignment—while developing Joint Business Plans that drive market penetration.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+              My secret? <span className="text-gray-900 dark:text-white font-medium">Treating partnerships as relationships</span>, not transactions. I leverage SFDC and Tableau for KPI tracking, but never lose sight of the humans behind the metrics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Why Work With Me - Enhanced */}
+    <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 rounded-3xl p-12 mb-20 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl"></div>
+      <div className="relative z-10">
+        <h4 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Why Partner With Me?</h4>
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="text-center">
+            <div className="text-4xl mb-3">🎯</div>
+            <h5 className="font-bold text-lg mb-2 dark:text-white">Results-Driven</h5>
+            <p className="text-gray-600 dark:text-gray-400">240% quota attainment through strategic partnership development</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl mb-3">🤝</div>
+            <h5 className="font-bold text-lg mb-2 dark:text-white">Human-Centric</h5>
+            <p className="text-gray-600 dark:text-gray-400">ICF-certified coaching combined with business strategy</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl mb-3">🌍</div>
+            <h5 className="font-bold text-lg mb-2 dark:text-white">Global Perspective</h5>
+            <p className="text-gray-600 dark:text-gray-400">Experience across DACH, CEE, Israel, and Asia-Pacific</p>
+          </div>
+        </div>
+        <p className="text-xl text-center text-gray-700 dark:text-gray-300 italic">
+          "I bring authenticity, diversity of thought, and a genuine knack for building bridges where others see walls."
+        </p>
+      </div>
+    </div>
+
+    {/* Closing Image Gallery */}
+    <div className="grid md:grid-cols-3 gap-6">
+      <img src="/Bildschirmfoto 2026-03-30 um 21.22.36.png" alt="Professional moments" className="rounded-2xl shadow-xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+      <img src="/Family5.jpg" alt="Family together" className="rounded-2xl shadow-xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+      <img src="/unnamed (31).jpg" alt="Achievements" className="rounded-2xl shadow-xl w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
     </div>
 
   </div>
