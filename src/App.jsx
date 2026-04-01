@@ -269,7 +269,7 @@ function App() {
       <div className="lg:col-span-5 relative">
         <div className="relative z-10 grid grid-cols-2 gap-4">
           <div className="space-y-4">
-            <img src="/Family1.jpeg" alt="Eggenfelden roots" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
+            <img src="/Family1.jpg" alt="Eggenfelden roots" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500 w-full h-64 object-cover" />
             <img src="/Family3.jpg" alt="Siblings" className="rounded-2xl shadow-2xl w-full h-40 object-cover" />
           </div>
           <div className="space-y-4 pt-8">
@@ -332,7 +332,7 @@ function App() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl flex items-end p-8">
         <p className="text-white text-xl font-medium italic">"Understanding where I come from helps me appreciate where you're going."</p>
       </div>
-      <img src="/Family/Family5.jpg" alt="The Whole Family" className="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+      <img src="/Family5.jpg" alt="The Whole Family" className="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
     </div>
 
   </div>
