@@ -290,7 +290,7 @@ function App() {
           <div>
             <h4 className="text-2xl font-bold mb-3 dark:text-white">The Eggenfelden Blueprint</h4>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              In a small Bavarian town, I was 1 of 7. Growing up with six siblings wasn't just about a busy household—it was a masterclass in 
+              In a small Bavarian town, I was 1 of 7. Growing up with six siblings wasn't just about a busy household - it was a masterclass in 
               <span className="text-gray-900 dark:text-white font-medium"> interpersonal dynamics</span>. My family taught me that 
               different perspectives aren't obstacles; they are the ingredients of a stronger whole.
             </p>
@@ -315,8 +315,8 @@ function App() {
           <div className="relative z-10">
             <h4 className="text-xl font-bold mb-4 text-blue-600">Why Work With Me?</h4>
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              You’re not just hiring a Channel Manager or Executive Coach; you're partnering with a human-centric strategist. 
-              I bring **authenticity**, **diversity of thought**, and a genuine knack for building bridges where others see walls.
+              You’re not just working with a Channel Manager or Executive Coach; you're partnering with a human-centric strategist. 
+              I bring authenticity, diversity of thought, and a genuine knack for building bridges where others see walls.
             </p>
           </div>
           <div className="absolute top-0 right-0 p-4 opacity-10">
